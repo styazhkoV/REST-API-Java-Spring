@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "6c1c03ab-8f4c-4472-ace7-338b8e5106f4",
+		"name": "MyRESTAPIspring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11449677"
+	},
+	"item": [
+		{
+			"name": "Object Cat Json",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "String Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/main",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"main"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST name  в PARAM",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "name",
+						"value": "Tom",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/special-cat?name=Tomcat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"special-cat"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tomcat"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
